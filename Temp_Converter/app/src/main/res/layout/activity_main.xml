@@ -20,7 +20,7 @@
         app:layout_constraintVertical_bias="0.112" />
 
     <EditText
-        android:id="@+id/editTextTextPersonName"
+        android:id="@+id/number"
         android:layout_width="133dp"
         android:layout_height="43dp"
         android:layout_marginTop="72dp"
@@ -36,20 +36,20 @@
         android:id="@+id/rgf"
         android:layout_width="134dp"
         android:layout_height="94dp"
-        app:layout_constraintBottom_toTopOf="@+id/button3"
+        app:layout_constraintBottom_toTopOf="@+id/convert"
         app:layout_constraintEnd_toStartOf="@+id/rgt"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView">
 
         <RadioButton
-            android:id="@+id/radioButton"
+            android:id="@+id/ff"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Fahrenheit" />
 
         <RadioButton
-            android:id="@+id/radioButton2"
+            android:id="@+id/fc"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Celsius" />
@@ -79,34 +79,34 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.591"
         app:layout_constraintStart_toEndOf="@+id/textView3"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName"
+        app:layout_constraintTop_toBottomOf="@+id/number"
         app:layout_constraintVertical_bias="0.552" />
 
     <RadioGroup
         android:id="@+id/rgt"
         android:layout_width="134dp"
         android:layout_height="94dp"
-        app:layout_constraintBottom_toTopOf="@+id/button3"
+        app:layout_constraintBottom_toTopOf="@+id/convert"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toEndOf="@+id/rgf"
         app:layout_constraintTop_toBottomOf="@+id/textView2">
 
         <RadioButton
-            android:id="@+id/radioButton6"
+            android:id="@+id/tf"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Fahrenheit" />
 
         <RadioButton
-            android:id="@+id/radioButton5"
+            android:id="@+id/tc"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Celsius" />
     </RadioGroup>
 
     <Button
-        android:id="@+id/button3"
+        android:id="@+id/convert"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Convert"
@@ -115,5 +115,23 @@
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/rgf" />
+
+    <TextView
+        android:id="@+id/result"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Result"
+        app:layout_constraintBottom_toTopOf="@+id/convert"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rgf" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="20dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

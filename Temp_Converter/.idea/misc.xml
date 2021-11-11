@@ -3,6 +3,7 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/LABS/MAD_LAB/Temp_Converter/app/src/main/res/layout/activity_main.xml" value="0.4528302049755674" />
         <entry key="..\:/Users/19bce7467/AndroidStudioProjects/Temp_Converter/app/src/main/res/layout/activity_main.xml" value="0.26403985507246375" />
       </map>
     </option>
@@ -12,5 +13,12 @@
   </component>
   <component name="ProjectType">
     <option name="id" value="Android" />
+  </component>
+  <component name="VisualizationToolProject">
+    <option name="state">
+      <ProjectState>
+        <option name="scale" value="0.4528302049755674" />
+      </ProjectState>
+    </option>
   </component>
 </project>
